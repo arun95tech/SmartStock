@@ -1,0 +1,24 @@
+# Python / Django
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.venv/
+*.egg-info/
+db.sqlite3
+.env
+
+# Node / React
+node_modules/
+dist/
+build/
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
