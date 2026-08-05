@@ -5,9 +5,17 @@ Record our project progress which show what we done till now
 ---
 
 **Done**
+# Session 04
+- Created smartstock database and smartstock_user
+- Resolved password mismatch between .env and actual DB user password
+- python manage.py migrate succeeded — full toolchain proven end-to-end
+# Session 03
+- Set up Python venv and install Django
+- Created Django project skeleton
+- manage.py check passes cleanly
 # Session 02
 - git init, created .gitignore (Python/Node/OS/IDE patterns)
-- First commit (1e0fad0): monorepo skeleton
+- First commit: skeleton
 - Created GitHub repo, connected via git remote add origin
 - Pushed successfully — main branch live on GitHub
 # Session 01
@@ -16,7 +24,7 @@ Record our project progress which show what we done till now
 - Set up progress log and error log
 
 **Next:**
-- Build accounts app: custom User model (must be first migration, can't be changed later)
+- create accounts app, custom User model (before any other migrations)
 
 **Notes:**
-- Repo: https://github.com/arun95tech/SmartStock
+- Repo: https://github.com/arun95tech/SmartStock 
