@@ -5,6 +5,10 @@ Record our project progress which show what we done till now
 ---
 
 **Done**
+# Session 06
+- Created master_data app: ItemCategory, Item, Supplier, ItemSupplier models
+- makemigrations + migrate successful
+- Registered in admin.py, created test rows via admin panel, confirmed FK dropdowns work
 # Session 05
 - Created accounts app: Role, User, Permission, RolePermission models
 - makemigrations + migrate successful, superuser created
@@ -29,7 +33,7 @@ Record our project progress which show what we done till now
 - Set up progress log and error log
 
 **Next:**
-- master_data app (ItemCategory, Item, Supplier, ItemSupplier)
+- inventory app (StockLocation, StockLedger, StockAdjustment)
 
 **Notes:**
 - Repo: https://github.com/arun95tech/SmartStock 
