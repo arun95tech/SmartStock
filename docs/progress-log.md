@@ -5,6 +5,11 @@ Record our project progress which show what we done till now
 ---
 
 **Done**
+# Session 07
+- Created inventory app: StockLocation, StockLedger, StockAdjustment models
+- All ledger/adjustment FKs use PROTECT (never lose audit history via cascade delete)
+- Wrote get_current_stock() service function - balance derived via Sum(), never stored
+- Fixed data loss bug: earlier admin panel entries never actually saved (see error log)
 # Session 06
 - Created master_data app: ItemCategory, Item, Supplier, ItemSupplier models
 - makemigrations + migrate successful
@@ -33,7 +38,7 @@ Record our project progress which show what we done till now
 - Set up progress log and error log
 
 **Next:**
-- inventory app (StockLocation, StockLedger, StockAdjustment)
+- register inventory models in admin.py, then start procurement app
 
 **Notes:**
 - Repo: https://github.com/arun95tech/SmartStock 
