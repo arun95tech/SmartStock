@@ -5,6 +5,10 @@ Record our project progress which show what we done till now
 ---
 
 **Done**
+# Session 08
+- Created procurement app: PurchaseOrder, POLine, GoodsReceipt, GRLine, QCHold models
+- QCHold uses OneToOneField to GRLine
+- Full end-to-end shell test with passed and failed condition
 # Session 07
 - Created inventory app: StockLocation, StockLedger, StockAdjustment models
 - All ledger/adjustment FKs use PROTECT (never lose audit history via cascade delete)
@@ -38,7 +42,7 @@ Record our project progress which show what we done till now
 - Set up progress log and error log
 
 **Next:**
-- register inventory models in admin.py, then start procurement app
+- production app (BOM, WorkOrder, MaterialReservation, MaterialIssue, FGReceipt)
 
 **Notes:**
 - Repo: https://github.com/arun95tech/SmartStock 
