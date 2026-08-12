@@ -5,6 +5,9 @@ Record our project progress which show what we done till now
 ---
 
 **Done**
+# Session 14
+- Installed djangorestframework-simplejwt for JWT authentication
+- Built master_data API: serializers, viewsets (ModelViewSet), router-based urls
 # Session 13
 - Wrote pytest tests for procurement (QC pass/fail gating), planning (reorder
   explainability + forecast calculation), production (reservation vs issue,
@@ -65,6 +68,7 @@ Record our project progress which show what we done till now
 - Set up progress log and error log
 
 **Next:**
--  API layer (serializers + viewsets)
+-  repeat this pattern for inventory, procurement, production, planning,
+  accounts (Role/Permission admin endpoints), audit
 **Notes:**
 - Repo: https://github.com/arun95tech/SmartStock 
