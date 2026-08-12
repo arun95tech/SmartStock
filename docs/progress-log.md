@@ -5,6 +5,10 @@ Record our project progress which show what we done till now
 ---
 
 **Done**
+# Session 09
+- Created production app: BOMHeader, BOMLine, WorkOrder, MaterialReservation,
+  MaterialIssue, FGReceipt models (single-level BOM by design)
+- Wrote issue_material() and receive_finished_goods() services
 # Session 08
 - Created procurement app: PurchaseOrder, POLine, GoodsReceipt, GRLine, QCHold models
 - QCHold uses OneToOneField to GRLine
@@ -42,7 +46,8 @@ Record our project progress which show what we done till now
 - Set up progress log and error log
 
 **Next:**
-- production app (BOM, WorkOrder, MaterialReservation, MaterialIssue, FGReceipt)
+- planning app (ForecastRun, ReorderRecommendation, ABCClassificationRun,
+  SupplierKPI, SupplierRiskScore)
 
 **Notes:**
 - Repo: https://github.com/arun95tech/SmartStock 
