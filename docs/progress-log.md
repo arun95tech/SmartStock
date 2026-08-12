@@ -5,6 +5,10 @@ Record our project progress which show what we done till now
 ---
 
 **Done**
+# Session 10
+- Created planning app: ForecastRun, ReorderRecommendation, ABCClassificationRun,
+  SupplierKPI, SupplierRiskScore models
+- Wrote moving_average_forecast() - simple, transparent forecasting (no black-box AI)
 # Session 09
 - Created production app: BOMHeader, BOMLine, WorkOrder, MaterialReservation,
   MaterialIssue, FGReceipt models (single-level BOM by design)
@@ -46,8 +50,6 @@ Record our project progress which show what we done till now
 - Set up progress log and error log
 
 **Next:**
-- planning app (ForecastRun, ReorderRecommendation, ABCClassificationRun,
-  SupplierKPI, SupplierRiskScore)
-
+- audit app (AuditTrail)
 **Notes:**
 - Repo: https://github.com/arun95tech/SmartStock 
