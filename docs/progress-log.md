@@ -5,6 +5,10 @@ Record our project progress which show what we done till now
 ---
 
 **Done**
+# Session 16
+- Built accounts API (Role, User, Permission, RolePermission)
+- Built audit API (AuditTrail)
+- Backend (models + services + tests + API) is functionally complete
 # Session 15
 - Built DRF API layer for inventory, procurement, production, planning
   (following the master_data pattern: serializers.py -> views.py -> urls.py
@@ -72,6 +76,6 @@ Record our project progress which show what we done till now
 - Set up progress log and error log
 
 **Next:**
-- accounts API (Role/Permission/User endpoints), audit API
+React frontend build
 **Notes:**
 - Repo: https://github.com/arun95tech/SmartStock 
