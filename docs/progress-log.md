@@ -5,6 +5,10 @@ Record our project progress which show what we done till now
 ---
 
 **Done**
+# Session 15
+- Built DRF API layer for inventory, procurement, production, planning
+  (following the master_data pattern: serializers.py -> views.py -> urls.py
+  -> registered in config/urls.py)
 # Session 14
 - Installed djangorestframework-simplejwt for JWT authentication
 - Built master_data API: serializers, viewsets (ModelViewSet), router-based urls
@@ -68,7 +72,6 @@ Record our project progress which show what we done till now
 - Set up progress log and error log
 
 **Next:**
--  repeat this pattern for inventory, procurement, production, planning,
-  accounts (Role/Permission admin endpoints), audit
+- accounts API (Role/Permission/User endpoints), audit API
 **Notes:**
 - Repo: https://github.com/arun95tech/SmartStock 
