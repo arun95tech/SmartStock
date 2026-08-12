@@ -5,6 +5,15 @@ Record our project progress which show what we done till now
 ---
 
 **Done**
+# Session 13
+- Wrote pytest tests for procurement (QC pass/fail gating), planning (reorder
+  explainability + forecast calculation), production (reservation vs issue,
+  full chain to FG receipt)
+- Full suite: pytest -v -> 8 passed in 1.98s
+# Session 12
+- Installed pytest, pytest-django
+- Wrote first automated test: test_stock_balance_is_derived_not_stored (inventory app)
+- Test passing: 1 passed in 2.87s
 # Session 11
 - Created audit app: AuditTrail model (generic entity_type/entity_id reference,
   same polymorphic pattern as StockLedger.ref_doc_id)
@@ -56,6 +65,6 @@ Record our project progress which show what we done till now
 - Set up progress log and error log
 
 **Next:**
-- test till now
+-  API layer (serializers + viewsets)
 **Notes:**
 - Repo: https://github.com/arun95tech/SmartStock 
