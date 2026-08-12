@@ -5,6 +5,12 @@ Record our project progress which show what we done till now
 ---
 
 **Done**
+# Session 11
+- Created audit app: AuditTrail model (generic entity_type/entity_id reference,
+  same polymorphic pattern as StockLedger.ref_doc_id)
+- Uses settings.AUTH_USER_MODEL / get_user_model() - correct Django pattern
+  for referencing the custom User model, avoids hard circular dependency
+- Verified via shell: created one AuditTrail entry linked to real superuser
 # Session 10
 - Created planning app: ForecastRun, ReorderRecommendation, ABCClassificationRun,
   SupplierKPI, SupplierRiskScore models
@@ -50,6 +56,6 @@ Record our project progress which show what we done till now
 - Set up progress log and error log
 
 **Next:**
-- audit app (AuditTrail)
+- test till now
 **Notes:**
 - Repo: https://github.com/arun95tech/SmartStock 
