@@ -58,6 +58,7 @@ export default function Dashboard() {
         <Box sx={{ display: 'flex', gap: 1 }}>
           <Button onClick={logout} variant="outlined" size="small">Log out</Button>
           <Button onClick={() => navigate('/items')} variant="outlined" size="small">Items</Button>
+          <Button onClick={() => navigate('/purchase-orders')} variant="outlined" size="small">Purchase orders</Button>
         </Box>
       </Box>
 
