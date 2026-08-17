@@ -6,6 +6,8 @@ from .serializers import ForecastRunSerializer, ReorderRecommendationSerializer,
 from .services import check_reorder
 from master_data.models import Item
 from inventory.models import StockLocation
+from rest_framework.decorators import action
+from .services import classify_items_abc
 
 
 class ForecastRunViewSet(viewsets.ModelViewSet):
@@ -37,6 +39,12 @@ class ReorderRecommendationViewSet(viewsets.ModelViewSet):
 class ABCClassificationRunViewSet(viewsets.ModelViewSet):
     queryset = ABCClassificationRun.objects.all()
     serializer_class = ABCClassificationRunSerializer
+
+    @action(detail=False, methods=['post'])
+    def run(self, request):
+        results = classify_items_abc()
+        serializer = ABCClassificationRunSerializer(results, many=True)
+        return Response(serializer.data)
 
 
 class SupplierKPIViewSet(viewsets.ModelViewSet):
