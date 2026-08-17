@@ -5,6 +5,10 @@ Record our project progress which show what we done till now
 ---
 
 **Done**
+# Session 17
+- Built JWT auth flow: AuthContext, Login page, ProtectedRoute
+- Built live Dashboard: fetches real items/locations, calls check_reorder()
+  live via API for each item, renders explainable reason text
 # Session 16
 - Built accounts API (Role, User, Permission, RolePermission)
 - Built audit API (AuditTrail)
@@ -76,6 +80,7 @@ Record our project progress which show what we done till now
 - Set up progress log and error log
 
 **Next:**
-React frontend build
+build out remaining screens (Items list, PO detail, Work Order detail)
+if time permits, then shift focus to dissertation writing
 **Notes:**
 - Repo: https://github.com/arun95tech/SmartStock 
