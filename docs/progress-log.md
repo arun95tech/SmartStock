@@ -5,6 +5,10 @@ Record our project progress which show what we done till now
 ---
 
 **Done**
+# Session 18
+- Added ABC classification API endpoint (POST /api/planning/abc-runs/run/)
+- Built Items list frontend screen: fetches items, triggers ABC classification,
+  displays SKU/name/class/reorder point/safety stock in a table
 # Session 17
 - Built JWT auth flow: AuthContext, Login page, ProtectedRoute
 - Built live Dashboard: fetches real items/locations, calls check_reorder()
