@@ -5,6 +5,8 @@ Record our project progress which show what we done till now
 ---
 
 **Done**
+# Session 19
+- Built Purchase Order detail screen (procurement.ts API client, PO detail page)
 # Session 18
 - Added ABC classification API endpoint (POST /api/planning/abc-runs/run/)
 - Built Items list frontend screen: fetches items, triggers ABC classification,
