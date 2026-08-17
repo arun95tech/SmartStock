@@ -3,7 +3,6 @@ from django.db import models
 from master_data.models import Item, Supplier
 
 
-
 class ForecastRun(models.Model):
     METHOD_CHOICES = [
         ('MOVING_AVG', 'Moving Average'),
@@ -60,13 +59,12 @@ class SupplierKPI(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     supplier = models.ForeignKey(Supplier, on_delete=models.PROTECT, related_name='kpis')
     period = models.DateField()
-    otif_score = models.DecimalField(max_digits=5, decimal_places=2)  # % on-time-in-full
+    otif_score = models.DecimalField(max_digits=5, decimal_places=2)
     avg_lead_time = models.DecimalField(max_digits=5, decimal_places=2)
     defect_rate = models.DecimalField(max_digits=5, decimal_places=2)
 
     def __str__(self):
         return f"{self.supplier.name} KPI ({self.period})"
-
 
 
 class SupplierRiskScore(models.Model):
