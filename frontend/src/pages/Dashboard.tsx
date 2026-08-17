@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Box, Typography, Button, Grid, Paper, Alert, CircularProgress } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { getItems } from '../api/masterData';
 import type { Item } from '../api/masterData';
@@ -9,7 +10,7 @@ import { checkReorder } from '../api/planning';
 import type { ReorderRecommendation } from '../api/planning';
 
 export default function Dashboard() {
-  const { logout } = useAuth();
+  const { logout } = useAuth(); const navigate = useNavigate();
   const [items, setItems] = useState<Item[]>([]);
   const [recommendations, setRecommendations] = useState<ReorderRecommendation[]>([]);
   const [loading, setLoading] = useState(true);
@@ -54,7 +55,10 @@ export default function Dashboard() {
           <Typography variant="h5">Dashboard</Typography>
           <Typography variant="body2" color="text.secondary">BrightBuild Ltd</Typography>
         </Box>
-        <Button onClick={logout} variant="outlined" size="small">Log out</Button>
+        <Box sx={{ display: 'flex', gap: 1 }}>
+          <Button onClick={logout} variant="outlined" size="small">Log out</Button>
+          <Button onClick={() => navigate('/items')} variant="outlined" size="small">Items</Button>
+        </Box>
       </Box>
 
       {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
